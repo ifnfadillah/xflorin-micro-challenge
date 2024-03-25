@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rekomendasi | Micro Challenge</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: Epilogue;
+      }
+      .truncate-text {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* Menampilkan maksimal 2 baris */
+        -webkit-box-orient: vertical;
+      }
+    </style>
+  </head>
+
+  <body class="bg-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #8f1313">
+      <div class="container">
+        <a class="navbar-brand me-5" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center mx-auto" id="navbarNav">
+          <ul class="navbar-nav fw-medium fs-6 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#">Tentang Kami</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="destinasi.html">Destinasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3" href="#">Berita</a>
+            </li>
+          </ul>
+          <div class="ms-auto">
+            <a class="btn btn-outline-light px-4" href="#">Daftar</a>
+            <a class="btn btn-light px-4 ms-3" style="color: #8f1313" href="#">Masuk</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Rekomendasi -->
+    <div class="container-fluid" style="padding-top: 70px">
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <h1 class="fw-bold my-2 pt-4" style="font-size: 40px">Rekomendasi Destinasi Wisata di Indonesia</h1>
+            <p class="my-2 fs-6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam voluptas delectus itaque dicta voluptate illo perferendis labore? Ex veritatis iure deleniti quam autem, impedit officia labore dolor minima quas adipisci.
+            </p>
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb fw-semibold mt-4" style="color: #848484">
+                <li class="breadcrumb-item" aria-current="page">
+                  <a class="nav-link d-inline" href="#">Beranda</a>
+                </li>
+                <li class="breadcrumb-item" aria-current="page">
+                  <a class="nav-link d-inline" href="">Rekomendasi</a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+          <div class="col-3 offset-2">
+            <img src="img/rekom.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <hr class="mt-0" />
+      </div>
+    </div>
+    <!-- End Rekomendasi -->
+
+    <!-- Content Destinasi Pilihan-->
+    <div class="container-fluid mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-2">
+            <h1 class="fw-bolder fs-4">Destinasi Pilihan</h1>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-3">
+            <img src="img/con1.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-3">
+            <img src="img/con1.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-3">
+            <img src="img/con1.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-3">
+            <img src="img/con1.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3">
+            <img src="img/con1.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-3">
+            <img src="img/con1.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-3">
+            <img src="img/con1.png" alt="" class="img-fluid" />
+          </div>
+          <div class="col-3">
+            <img src="img/con1.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Destinasi Pilihan -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-bottom: -5px">
+      <path
+        fill="#881818"
+        fill-opacity="1"
+        d="M0,256L34.3,256C68.6,256,137,256,206,250.7C274.3,245,343,235,411,208C480,181,549,139,617,149.3C685.7,160,754,224,823,224C891.4,224,960,160,1029,160C1097.1,160,1166,224,1234,245.3C1302.9,267,1371,245,1406,234.7L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+      ></path>
+    </svg>
+
+    <!-- Content Destinasi Tersembunyi-->
+    <section class="container-fluid" style="background: linear-gradient(to bottom, #881818, #be3131)">
+      <div class="container pb-3">
+        <div class="row">
+          <div class="col-12 mb-2 text-center">
+            <h1 class="fw-bolder fs-2 text-light">Destinasi Tersembunyi</h1>
+            <p class="fw-medium fs-6 text-light">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque animi, amet temporibus alias autem quia nihil inventore adipisci. Quidem at cupiditate cum aperiam minus debitis explicabo sint error inventore earum!
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            <img src="img/tersem.png" alt="" class="img-fluid" />
+            <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis incidunt eligendi reiciendis, eaque, animi, est illum numquam dicta veritatis libero blanditiis. Ipsa minus aliquam optio aut nulla accusantium placeat.
+            </p>
+          </div>
+          <div class="col-4">
+            <img src="img/tersem.png" alt="" class="img-fluid" />
+            <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis incidunt eligendi reiciendis, eaque, animi, est illum numquam dicta veritatis libero blanditiis. Ipsa minus aliquam optio aut nulla accusantium placeat.
+            </p>
+          </div>
+          <div class="col-4">
+            <img src="img/tersem.png" alt="" class="img-fluid" />
+            <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis incidunt eligendi reiciendis, eaque, animi, est illum numquam dicta veritatis libero blanditiis. Ipsa minus aliquam optio aut nulla accusantium placeat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col-4">
+            <img src="img/tersem.png" alt="" class="img-fluid" />
+            <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis incidunt eligendi reiciendis, eaque, animi, est illum numquam dicta veritatis libero blanditiis. Ipsa minus aliquam optio aut nulla accusantium placeat.
+            </p>
+          </div>
+          <div class="col-4">
+            <img src="img/tersem.png" alt="" class="img-fluid" />
+            <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis incidunt eligendi reiciendis, eaque, animi, est illum numquam dicta veritatis libero blanditiis. Ipsa minus aliquam optio aut nulla accusantium placeat.
+            </p>
+          </div>
+          <div class="col-4">
+            <img src="img/tersem.png" alt="" class="img-fluid" />
+            <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis incidunt eligendi reiciendis, eaque, animi, est illum numquam dicta veritatis libero blanditiis. Ipsa minus aliquam optio aut nulla accusantium placeat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row mx-auto py-5">
+          <div class="col-12">
+            <img src="img/banner.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer  -->
+    <!-- <footer>
+      <div class="container-fluid" style="background: linear-gradient(to bottom, #7d2121, #bf3232); width: auto; height: 250px">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <img src="" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
