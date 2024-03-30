@@ -48,3 +48,28 @@ body {
   -webkit-line-clamp: 2; /* Menampilkan maksimal 2 baris */
   -webkit-box-orient: vertical;
 }
+
+/* Paginasi */
+.pagination .page-item.active .page-link {
+  background-color: #8f1313;
+  border-color: #8f1313;
+  color: white;
+}
+.pagination .page-link {
+  color: black;
+  background-color: #f7f7f7;
+}
+
+/* button */
+.custom-btn {
+  color: #8f1313;
+  border-color: #8f1313;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.custom-btn:hover {
+  background-color: #ab1616;
+  color: #fff;
+}
