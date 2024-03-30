@@ -2,6 +2,9 @@
 * {
   font-family: Epilogue;
 }
+body {
+  background-color: #f7f7f7;
+}
 /* Navbar */
 .navbar-toggler {
   border: none;
@@ -34,6 +37,11 @@
   visibility: visible;
 }
 
+/* Breadcumb */
+.nav-li {
+  text-decoration: none;
+  color: #8f1313;
+}
 .truncate-text {
   overflow: hidden;
   display: -webkit-box;
