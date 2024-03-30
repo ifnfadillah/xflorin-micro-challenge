@@ -61,6 +61,13 @@ body {
 }
 
 /* button */
+.btn-outline-light:hover {
+  background-color: white;
+  color: #8f1313;
+}
+.btn-light:hover {
+  color: #8f1313;
+}
 .custom-btn {
   color: #8f1313;
   border-color: #8f1313;
