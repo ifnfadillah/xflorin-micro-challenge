@@ -42,6 +42,9 @@ body {
   text-decoration: none;
   color: #8f1313;
 }
+.nav-li:hover {
+  color: #e84343;
+}
 .truncate-text {
   overflow: hidden;
   display: -webkit-box;
