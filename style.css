@@ -60,6 +60,19 @@ body {
   padding: 20px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
+  transition: transform 0.3s ease;
+}
+.card:hover .overlay {
+  transform: scale(1.05);
+  margin-bottom: -5px;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
 }
 
 /* Paginasi */
