@@ -50,6 +50,10 @@ body {
 }
 
 /* Card link image */
+.card {
+  border: none;
+  box-shadow: none;
+}
 .overlay {
   position: absolute;
   bottom: 0;
@@ -95,17 +99,9 @@ body {
 .overlay-4 p {
   margin-bottom: 0;
 }
-.card-4:hover .overlay-4 {
+.card:hover .overlay-4 {
   transform: scale(1.05);
   margin-bottom: -3px;
-}
-
-.card-img-top {
-  transition: transform 0.3s ease;
-}
-
-.card-4:hover .card-img-top {
-  transform: scale(1.05);
 }
 
 /* Paginasi */
