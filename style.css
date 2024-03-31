@@ -79,6 +79,35 @@ body {
   transform: scale(1.05);
 }
 
+.overlay-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  transition: transform 0.3s ease;
+}
+.overlay-4 h5,
+.overlay-4 p {
+  margin-bottom: 0;
+}
+.card-4:hover .overlay-4 {
+  transform: scale(1.05);
+  margin-bottom: -3px;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card-4:hover .card-img-top {
+  transform: scale(1.05);
+}
+
 /* Paginasi */
 .pagination .page-item.active .page-link {
   background-color: #8f1313;
