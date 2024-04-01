@@ -119,16 +119,16 @@ body {
   border-bottom-right-radius: 7px;
   text-align: center;
 }
-/* .bg-custom-btn-berita:hover {
+.bg-custom-btn-berita:hover {
   background-color: #8f1313;
-} */
+}
 .bg-custom-btn-berita a.stretched-link {
   color: #8f1313;
   text-decoration: none;
   display: inline-block;
 }
 .bg-custom-btn-berita a.stretched-link:hover {
-  color: #e84343;
+  color: white;
 }
 
 /* Paginasi */
