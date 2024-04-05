@@ -99,36 +99,62 @@ body {
   transform: scale(1.05);
 }
 
-.bg-custom-berita {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px 15px;
-}
-.bg-custom-btn-berita {
+/* Card Berita */
+.card-berita {
   position: relative;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  overflow: hidden;
+  border-radius: 7px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card-berita:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top-berita {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.card-berita:hover .card-img-top-berita {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.card-berita:hover .card-img-top-berita:active {
+  transform: scale(1);
+}
+
+.bg-custom-berita {
+  position: relative;
   background-color: rgb(255, 255, 255);
-  padding: 10px;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
   border-bottom-left-radius: 7px;
   border-bottom-right-radius: 7px;
-  text-align: center;
 }
-.bg-custom-btn-berita:hover {
-  background-color: #8f1313;
+
+.truncate-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
-.bg-custom-btn-berita a.stretched-link {
-  color: #8f1313;
-  text-decoration: none;
-  display: inline-block;
+
+.stretched-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-.bg-custom-btn-berita a.stretched-link:hover {
-  color: white;
+
+.card-berita:hover .stretched-link {
+  opacity: 1;
 }
 
 /* Paginasi */
