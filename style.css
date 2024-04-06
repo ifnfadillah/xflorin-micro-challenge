@@ -220,3 +220,48 @@ body {
   border: none;
   border-top: 2px solid #8f1313;
 }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 2px solid #9e1e27;
+  background: #f7f7f7;
+  padding: 20px 25px;
+}
+.box-top {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 61px;
+  height: 61px;
+  margin-right: 25px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.star-container {
+  margin-top: 0px;
+}
+
+h5 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.isi-ulasan {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 0px;
+}
