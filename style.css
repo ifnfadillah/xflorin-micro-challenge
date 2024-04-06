@@ -276,3 +276,68 @@ h5 {
   background-color: #ab1616;
   color: white;
 }
+
+/* Modal Ulasan */
+
+.modal-content {
+  padding: 10px 25px;
+  background-color: #f7f7f7;
+}
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  display: inline-block;
+}
+.rating input {
+  display: none;
+}
+.rating label {
+  font-size: 40px;
+  color: #ccc;
+  cursor: pointer;
+}
+.rating label:before {
+  content: "★";
+}
+.rating input:checked ~ label {
+  color: #fdd835;
+}
+.rating input:checked ~ label:before {
+  content: "★";
+}
+.custom-btn-batal {
+  color: #8f1313;
+  border-color: #8f1313;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.custom-btn-batal:hover {
+  background-color: #9e1e27;
+  color: white;
+  border-color: #8f1313;
+}
+
+.box-small {
+  display: flex;
+}
+.box-top-small {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.profile-img-small {
+  width: 31px;
+  height: 31px;
+  margin-right: 10px;
+}
+
+.user-details-small {
+  display: flex;
+  flex-direction: column;
+}
