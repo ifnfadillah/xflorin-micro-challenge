@@ -127,7 +127,7 @@
           </div>
           <div class="col-2 offset-2">
             <p class="fw-medium" style="color: blue; font-size: 14px">Sudah pernah kesini?</p>
-            <a class="btn custom-btn-ulasan me-4" style="font-size: 14px" href="#">Tulis Ulasan</a>
+            <a class="btn custom-btn-ulasan me-4" data-bs-toggle="modal" data-bs-target="#ulasanModal" style="font-size: 14px" href="#">Tulis Ulasan</a>
           </div>
         </div>
         <div class="row py-4">
@@ -140,6 +140,51 @@
     </div>
     <!-- End isi -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="ulasanModal" tabindex="-1" aria-labelledby="ulasanModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="box-small mb-3">
+              <h5 class="modal-title" style="font-size: 25px" id="ulasanModalLabel">Tulis Ulasanmu</h5>
+              <div class="box-top-small">
+                <img src="img/profil.png" alt="Foto Profil" class="profile-img-small" />
+                <div class="user-details-small">
+                  <h5 class="fw-medium" style="font-size: 14px">Amanda Putri</h5>
+                </div>
+              </div>
+            </div>
+            <form>
+              <label for="rating" class="fw-medium" style="font-size: 15px">Beri nilai pada trip Anda di <span class="fw-bold">Danau Toba</span></label>
+              <div class="rating mb-2">
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label> <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label> <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+              </div>
+
+              <div class="mb-4">
+                <label for="ulasan" class="fw-bold mb-2" style="font-size: 18px">Ulasan</label>
+                <textarea class="form-control" id="ulasan" rows="3" placeholder="Tulis ulasanmu disini" style="font-size: 13px"></textarea>
+              </div>
+            </form>
+            <a class="btn custom-btn-batal me-2" data-bs-dismiss="modal" style="font-size: 14px" href="#">Batal</a>
+            <a class="btn custom-btn-ulasan" data-bs-toggle="modal" data-bs-target="#successModal" onclick="kirimUlasan()" style="font-size: 14px" href="#">Kirim</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="ulasanModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="img/success.png" class="mb-4" alt="" />
+            <h5 style="font-size: 25px" class="mb-4">Selamat, Ulasan Anda berhasil dikirimkan!</h5>
+            <a href="ulasan.html" class="mb-4">Kembali ke Ulasan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
     <!-- Ulasan -->
     <div class="container-fluid">
       <div class="container">
@@ -337,6 +382,7 @@
       </div>
     </div>
     <!-- end footer -->
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
