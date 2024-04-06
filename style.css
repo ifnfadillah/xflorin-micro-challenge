@@ -265,3 +265,14 @@ h5 {
   line-height: 1.5;
   margin-top: 0px;
 }
+
+.custom-btn-ulasan {
+  color: white;
+  background-color: #8f1313;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.custom-btn-ulasan:hover {
+  background-color: #ab1616;
+  color: white;
+}
