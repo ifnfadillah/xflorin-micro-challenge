@@ -7,6 +7,15 @@ function showContent(contentName) {
   document.getElementById(contentName + "-content").style.display = "flex";
 }
 
+// Live carousel
+document.addEventListener("DOMContentLoaded", function () {
+  var myCarousel = document.querySelector("#carouselExampleIndicators");
+  var carousel = new bootstrap.Carousel(myCarousel, {
+    interval: 2000, // Ganti angka ini dengan interval (dalam milidetik) antara pergeseran gambar
+    wrap: true, // Aktifkan wrapping sehingga carousel akan kembali ke awal setelah mencapai gambar terakhir
+  });
+});
+
 // Modal Ulasan
 function kirimUlasan() {
   var rating = document.querySelector('input[name="rating"]:checked');
