@@ -40,8 +40,8 @@
                 </li>
               </ul>
               <div class="d-grid gap-2 mt-3 d-lg-flex my-lg-auto">
-                <a href="#" class="btn btn-outline-light px-lg-3 me-md-2 fw-normal">Daftar</a>
-                <a href="#" class="btn btn-light px-lg-3 fw-normal" style="color: #8f1313">Masuk</a>
+                <a href="register.html" class="btn btn-outline-light px-lg-3 me-md-2 fw-normal">Daftar</a>
+                <a href="login.html" class="btn btn-light px-lg-3 fw-normal" style="color: #8f1313">Masuk</a>
               </div>
             </div>
           </div>
@@ -141,6 +141,19 @@
     <!-- End isi -->
 
     <!-- Modal -->
+    <!-- Modal if user belum login -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="ulasanModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+            <img src="img/auth.png" class="mb-4" alt="" />
+            <h5 style="font-size: 25px" class="mb-4">Selamat, Ulasan Anda berhasil dikirimkan!</h5>
+            <a href="ulasan.html" class="mb-4">Kembali ke Ulasan</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Ulasan -->
     <div class="modal fade" id="ulasanModal" tabindex="-1" aria-labelledby="ulasanModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -173,6 +186,7 @@
         </div>
       </div>
     </div>
+    <!-- Modal Success -->
     <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="ulasanModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -321,7 +335,7 @@
       <div class="container">
         <div class="row mx-auto mb-3 mb-md-4">
           <div class="col-12">
-            <img src="img/banner.png" alt="" class="img-fluid" />
+            <img src="img/banner3.png" alt="" class="img-fluid" />
           </div>
         </div>
       </div>

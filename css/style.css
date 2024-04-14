@@ -351,3 +351,126 @@ h5 {
     display: none;
   }
 }
+
+.left-box {
+  padding: 75px 30px;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+}
+
+.p {
+  color: #ab1616;
+  margin-top: 25px;
+  font-size: 19px;
+}
+
+.text-start {
+  color: #555;
+}
+
+.right-box {
+  background: url("/img/bg-login.png") no-repeat center center fixed;
+  padding: 0px 40px;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email {
+  color: #8f1313;
+  size: 30px;
+}
+.border-box {
+  border-radius: 20px;
+  background-color: white;
+  margin: 50px;
+}
+
+.btn-lgn {
+  border-radius: 20px;
+}
+.row-1 {
+  text-align: center;
+}
+.a {
+  color: #ab1616;
+}
+.pw {
+  color: #ab1616;
+}
+/* .logo-container {
+  justify-content: center;
+  display: relative;
+} */
+.form-border {
+  border: 2px solid red;
+  padding: 20px;
+  border-radius: 10px;
+}
+.btn-login {
+  font-size: 16px;
+  padding: 12px 60px;
+  background-color: #d3d3d3;
+  color: #bcbcbc;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-login:hover {
+  color: #8f1313;
+  background-color: #dc3545;
+  color: #fff;
+}
+.form-input {
+  padding: 12px 18px;
+}
+.form input[type="text"]:hover,
+.form input[type="password"]:hover {
+  color: #000000;
+  background-color: #dc3545;
+  padding: 10px;
+}
+.input-group .input-group-text {
+  width: 40px;
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.form-control {
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.left-box {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+/* .right {
+  background: url("img/Rectangle\ 147.png") no-repeat center center fixed;
+  padding: 40px 30px 40px 40px;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.nav-auth {
+  display: flex;
+}
+.nav-auth {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.profile-img-small {
+  width: 31px;
+  height: 31px;
+  margin-right: 10px;
+}
+
+.user-details-nav {
+  display: flex;
+  flex-direction: column;
+}

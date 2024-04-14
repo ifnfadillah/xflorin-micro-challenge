@@ -11,8 +11,8 @@ function showContent(contentName) {
 document.addEventListener("DOMContentLoaded", function () {
   var myCarousel = document.querySelector("#carouselExampleIndicators");
   var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 2000, // Ganti angka ini dengan interval (dalam milidetik) antara pergeseran gambar
-    wrap: true, // Aktifkan wrapping sehingga carousel akan kembali ke awal setelah mencapai gambar terakhir
+    interval: 2000,
+    wrap: true,
   });
 });
 
