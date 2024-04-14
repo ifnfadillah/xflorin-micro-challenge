@@ -35,12 +35,12 @@
                   <a class="nav-link fs-6 fw-normal mx-3" href="destinasi.html">Destinasi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-6 fw-normal mx-3" href="berita.html">Berita</a>
+                  <a class="nav-link fw-normal mx-3" href="berita.html">Berita</a>
                 </li>
               </ul>
               <div class="d-grid gap-2 mt-3 d-lg-flex my-lg-auto">
                 <a href="register.html" class="btn btn-outline-light px-lg-3 me-md-2 fw-normal">Daftar</a>
-                <a href="login.html" class="btn btn-light px-lg-3 fw-normal" style="color: #8f1313">Masuk</a>
+                <a href="#" class="btn btn-light px-lg-3 fw-normal" style="color: #8f1313">Masuk</a>
               </div>
             </div>
           </div>
@@ -51,66 +51,67 @@
       </nav>
     </header>
     <!-- End Navbar -->
-    <div class="container-fluid min-vh-100">
+    <div class="container-fluid sticky-container">
       <div class="row">
         <!-- Left Box -->
-        <div class="col-md-3 left-box">
-          <div class="text-center left-content">
+        <div class="left col-md-3 left-box" style="margin-top: 100px">
+          <div class="text-center">
             <div class="featured-image">
-              <img src="img/ic_travel.png" class="img-fluid" style="width: 70px" />
-              <h3>Jelajahi pariwisata di</h3>
-              <h1 class="Left fw-semibold fs-1">Indonesia bersama Kami!</h1>
+              <img src="img/ic_travel.png" class="img-fluid mb-3" style="width: 70px" />
+              <h3 class="fw-semibold fs-5 text-black">Jelajahi Pariwisata di</h3>
+              <h1 class="fw-bold fs-3 mb-4" style="color: #8f1313">Indonesia <br />bersama Kami!</h1>
             </div>
-            <p class="mb-4 p">Sebagai pengguna, Anda dapat:</p>
+            <p class="fw-normal fs-6 mb-4" style="color: #8f1313">Sebagai pengguna, Anda dapat:</p>
             <ul class="list-unstyled text-start">
-              <li>
-                <img src="img/preview.png" class="preview" alt="" /> <strong>Membuat ulasan</strong> terhadap
-                <p class="pg">berbagai wisata di indonesia</p>
+              <li class="d-flex align-items-center mb-3">
+                <img src="img/preview.png" class="me-3 mb-1" alt="" style="width: 25px" />
+                <p class="fw-normal mb-0" style="font-size: 13px"><strong>Membuat ulasan</strong> terhadap berbagai wisata di Indonesia</p>
               </li>
-              <li>
-                <img src="img/profile.png" class="preview" alt="" /> <strong>Mengedit profil</strong> yang digunakan,
-                <p class="pg">termasuk nama dan foto profil</p>
+              <li class="d-flex align-items-center mb-3">
+                <img src="img/profile.png" class="me-3 mb-3" alt="" style="width: 25px" />
+                <p class="fw-normal" style="font-size: 13px"><strong>Mengedit Profile</strong> yang digunakan, termasuk nama dan foto profil</p>
               </li>
             </ul>
           </div>
         </div>
         <!-- Right Box -->
-        <div class="col-md-9 right-box">
-          <div class="border rounded-4 col-md-7 p-3" style="width: 60%; height: 80%">
-            <div class="logo-container">
-              <!-- Tambahkan kelas logo-container untuk logo -->
-              <img src="img/logo-col.png" class="img-fluid mb-3" alt="Logo" style="width: 20%" />
+        <div class="right col-md-9 right-box" style="margin-top: 50px">
+          <div class="border-box rounded-4 col-md-6 p-3 mt-5" style="width: 70%">
+            <div class="logo-container text-center">
+              <img src="img/logo-col.png" class="img-fluid mb-2" alt="Logo" style="width: 200px" />
+            </div>
+            <div class="container mt-2" style="padding: 15px 50px">
               <div class="header-text mb-4 md-6">
-                <h2 class="fw-bold">Selamat Datang Kembali!</h2>
+                <h2 class="fw-bold text-center" style="color: #8f1313">Selamat Datang!</h2>
               </div>
-              <p class="email mb-1">Email</p>
-              <div class="input-group mb-4 form">
-                <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Masukkan email" />
-              </div>
-              <p class="email mb-1">Kata sandi</p>
-              <div class="input-group mb-1 form">
-                <span class="input-group-text">
-                  <i class="bi bi-lock"></i>
-                </span>
-                <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Masukkan kata sandi" />
-              </div>
-              <div class="input-group mb-5 d-flex justify-content-between">
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="formCheck" />
-                  <label for="formCheck" class="form-check-label text-secondary"><small>Ingatkan saya</small></label>
+              <form>
+                <p class="email fw-semibold mb-2" style="font-size: 18px">Email</p>
+                <div class="input-group mb-3 form">
+                  <input type="text" class="form-control form-control-lg bg-light rounded-4" style="font-size: 15px" placeholder="Masukkan email" />
                 </div>
-                <div class="forgot">
-                  <small><a class="pw" href="#">Lupa kata sandi?</a></small>
+                <p class="email fw-semibold mb-2" style="font-size: 18px">Kata Sandi</p>
+                <div class="input-group mb-4 form">
+                  <input type="password" class="form-control form-control-lg bg-light rounded-4" style="font-size: 15px" placeholder="Masukkan kata sandi" />
                 </div>
-              </div>
 
-              <div class="input-group mb-2 justify-content-center">
-                <button class="btn btn-lg btn-primary btn-login rounded-5">Masuk</button>
-              </div>
+                <div class="input-group mb-4 d-flex justify-content-between">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="formCheck" />
+                    <label for="formCheck" class="form-check-label text-secondary"><small>Ingatkan saya</small></label>
+                  </div>
+                  <div class="forgot">
+                    <small><a class="pw" href="#">Lupa kata sandi?</a></small>
+                  </div>
+                </div>
+
+                <div class="input-group mb-4 justify-content-center">
+                  <button class="btn btn-lg btn-primary btn-login rounded-5">Masuk</button>
+                </div>
+              </form>
             </div>
 
-            <div class="row-1 mb-1">
-              <small>Belum punya akun? <a class="a fw-bold" href="#">Daftar</a></small>
+            <div class="row-1 mb-3">
+              <small>Belum punya akun? <a class="a fw-bold" href="register.html">Daftar</a></small>
             </div>
           </div>
         </div>
