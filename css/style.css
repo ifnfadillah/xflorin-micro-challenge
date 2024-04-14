@@ -454,3 +454,23 @@ h5 {
   justify-content: center;
   align-items: center;
 } */
+
+.nav-auth {
+  display: flex;
+}
+.nav-auth {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.profile-img-small {
+  width: 31px;
+  height: 31px;
+  margin-right: 10px;
+}
+
+.user-details-nav {
+  display: flex;
+  flex-direction: column;
+}
