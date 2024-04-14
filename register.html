@@ -51,66 +51,61 @@
       </nav>
     </header>
     <!-- End Navbar -->
-
-    <div class="container-fluid min-vh-200">
+    <div class="container-fluid sticky-container">
       <div class="row">
         <!-- Left Box -->
-        <div class="left col-md-3 left-box">
-          <div class="text-center left-content">
+        <div class="left col-md-3 left-box" style="margin-top: 100px">
+          <div class="text-center">
             <div class="featured-image">
-              <img src="img/ic_travel.png" class="img-fluid" style="width: 70px" />
-              <h3>Jelajahi pariwisata di</h3>
-              <h1 class="Left fw-semibold fs-1">Indonesia bersama Kami!</h1>
+              <img src="img/ic_travel.png" class="img-fluid mb-3" style="width: 70px" />
+              <h3 class="fw-semibold fs-5 text-black">Jelajahi Pariwisata di</h3>
+              <h1 class="fw-bold fs-3 mb-4" style="color: #8f1313">Indonesia <br />bersama Kami!</h1>
             </div>
-            <p class="mb-4 p">Sebagai pengguna, Anda dapat:</p>
+            <p class="fw-normal fs-6 mb-4" style="color: #8f1313">Sebagai pengguna, Anda dapat:</p>
             <ul class="list-unstyled text-start">
-              <li>
-                <img src="img/preview.png" class="preview" alt="" /><strong>Membuat ulasan</strong> terhadap
-                <p class="pg">berbagai wisata di Indonesia</p>
+              <li class="d-flex align-items-center mb-3">
+                <img src="img/preview.png" class="me-3 mb-1" alt="" style="width: 25px" />
+                <p class="fw-normal mb-0" style="font-size: 13px"><strong>Membuat ulasan</strong> terhadap berbagai wisata di Indonesia</p>
               </li>
-              <li>
-                <img src="img/profile.png" class="preview" alt="" /> <strong>Mengedit profil</strong> yang digunakan,
-                <p class="pg">termasuk nama dan foto profil</p>
+              <li class="d-flex align-items-center mb-3">
+                <img src="img/profile.png" class="me-3 mb-3" alt="" style="width: 25px" />
+                <p class="fw-normal" style="font-size: 13px"><strong>Mengedit Profile</strong> yang digunakan, termasuk nama dan foto profil</p>
               </li>
             </ul>
           </div>
         </div>
         <!-- Right Box -->
-        <div class="right col-md-9 right-box">
-          <div class="border rounded-4 col-md-6 p-3 mt-5" style="width: 60%; height: 92%; margin-top: 100px">
-            <div class="logo-container">
-              <!-- Tambahkan kelas logo-container untuk logo -->
-              <img src="img/logo-col.png" class="img-fluid mb-3" alt="Logo" style="width: 20%" />
+        <div class="right col-md-9 right-box" style="margin-top: 50px">
+          <div class="border-box rounded-4 col-md-6 p-3 mt-5" style="width: 70%">
+            <div class="logo-container text-center">
+              <img src="img/logo-col.png" class="img-fluid mb-2" alt="Logo" style="width: 200px" />
+            </div>
+            <div class="container mt-2" style="padding: 15px 50px">
               <div class="header-text mb-4 md-6">
-                <h2 class="fw-bold">Selamat Datang!</h2>
+                <h2 class="fw-bold text-center" style="color: #8f1313">Selamat Datang!</h2>
               </div>
               <form>
-                <p class="email mb-1">Username</p>
-                <div class="input-group mb-4 form">
-                  <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Masukkan username" />
+                <p class="email fw-semibold mb-2" style="font-size: 18px">Username</p>
+                <div class="input-group mb-3 form">
+                  <input type="text" class="form-control form-control-lg bg-light rounded-4" style="font-size: 15px" placeholder="Masukkan username" />
                 </div>
-                <p class="email mb-1">Nomor telepon</p>
-                <div class="input-group mb-4 form">
-                  <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Masukan nomor telepon" />
+                <p class="email fw-semibold mb-2" style="font-size: 18px">Nomor Telepon</p>
+                <div class="input-group mb-3 form">
+                  <input type="text" class="form-control form-control-lg bg-light rounded-4" style="font-size: 15px" placeholder="Masukkan nomor telepon" />
                 </div>
-                <p class="email mb-1">Email</p>
-                <div class="input-group mb-4 form">
-                  <input type="text" class="form-control form-control-lg bg-light fs-6" placeholder="Masukan email" />
+                <p class="email fw-semibold mb-2" style="font-size: 18px">Email</p>
+                <div class="input-group mb-3 form">
+                  <input type="text" class="form-control form-control-lg bg-light rounded-4" style="font-size: 15px" placeholder="Masukkan email" />
                 </div>
-                <p class="email mb-1">Kata sandi</p>
+                <p class="email fw-semibold mb-2" style="font-size: 18px">Kata Sandi</p>
                 <div class="input-group mb-4 form">
-                  <span class="input-group-text">
-                    <i class="bi bi-lock"></i>
-                  </span>
-                  <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Masukan kata sandi" />
+                  <input type="password" class="form-control form-control-lg bg-light rounded-4" style="font-size: 15px" placeholder="Masukkan kata sandi" />
                 </div>
-                <p class="email mb-1">Konfirmasi kata sandi</p>
+                <p class="email fw-semibold mb-2" style="font-size: 18px">Konfirmasi Kata Sandi</p>
                 <div class="input-group mb-4 form">
-                  <span class="input-group-text">
-                    <i class="bi bi-lock"></i>
-                  </span>
-                  <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Konfirmasi Kata Sandi" />
+                  <input type="password" class="form-control form-control-lg bg-light rounded-4" style="font-size: 15px" placeholder="Masukkan ulang kata sandi" />
                 </div>
+
                 <div class="input-group mb-5 d-flex justify-content-between">
                   <div class="form-check">
                     <input type="checkbox" class="form-check-input" id="formCheck" />
@@ -121,9 +116,8 @@
                   </div>
                 </div>
 
-                <div class="input-group mb-2 justify-content-center">
-                  <button class="btn btn-lg btn-primary btn-login rounded-5">Masuk</button>
-                  <!-- Tambahkan kelas btn-login -->
+                <div class="input-group mb-4 justify-content-center">
+                  <button class="btn btn-lg btn-primary btn-login rounded-5">Daftar</button>
                 </div>
               </form>
             </div>
