@@ -45,3 +45,11 @@ ratings.forEach((radio) => {
     event.target.checked = true;
   });
 });
+
+$(document).ready(function () {
+  // Aktivasi carousel dengan autoplay
+  $("#destinasiCarousel").carousel({
+    interval: 3000, // Ganti angka ini dengan interval autoplay yang diinginkan (dalam milidetik)
+    ride: "carousel", // Aktifkan autoplay
+  });
+});
