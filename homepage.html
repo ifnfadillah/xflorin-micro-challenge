@@ -26,34 +26,21 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav ms-lg-5 justify-content-center flex-grow-1">
                 <li class="nav-item">
-                  <a class="nav-link active fs-6 fw-normal mx-3" aria-current="page" href="#">Beranda</a>
+                  <a class="nav-link fs-6 fw-normal mx-3" aria-current="page" href="#">Beranda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fs-6 fw-normal mx-3" href="#">Tentang Kami</a>
+                  <a class="nav-link fs-6 fw-normal mx-3" href="tentangkami.html">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link fs-6 fw-normal mx-3" href="destinasi.html">Destinasi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link fw-normal mx-3" href="berita.html">Berita</a>
+                  <a class="nav-link fs-6 fw-normal mx-3" href="berita.html">Berita</a>
                 </li>
               </ul>
               <div class="d-grid gap-2 mt-3 d-lg-flex my-lg-auto">
-                <div class="dropdown">
-                  <div class="nav-auth">
-                    <img src="img/profil.png" alt="Foto Profil" class="profile-img-small me-3" />
-                    <div class="user-details-nav">
-                      <h5 class="fw-medium text-light" style="font-size: 14px">Amanda Putri</h5>
-                    </div>
-                    <a class="btn btn-dark dropdown-toggle" style="font-size: 14px" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
-
-                    <ul class="dropdown-menu dropdown-menu-dark" style="background-color: #aa232c">
-                      <li><a class="dropdown-item text-light" href="#">Aceh</a></li>
-                      <li><a class="dropdown-item text-light" href="#">Sumatera Utara</a></li>
-                      <li><a class="dropdown-item text-light" href="#">Sumatera Barat</a></li>
-                    </ul>
-                  </div>
-                </div>
+                <a href="register.html" class="btn btn-outline-light px-lg-3 me-md-2 fw-normal">Daftar</a>
+                <a href="login.html" class="btn btn-light px-lg-3 fw-normal" style="color: #8f1313">Masuk</a>
               </div>
             </div>
           </div>
@@ -64,33 +51,36 @@
       </nav>
     </header>
     <!-- End Navbar -->
-    <!-- Search bar -->
-    <div class="header_bg">
-      <form class="form-inline search-box">
-        <div class="container">
-          <h1 class="text-center fw-bold mt-3 mb-4" class="width-100">Mau pergi kemana?</h1>
-          <div class="input-group">
-            <span class="input-group-prepend">
-              <span class="input-group-text"><i class="fa-sharp fa-solid fa-magnifying-glass " ></i></span> <!-- Icon search di sini -->
-            </span>
-            <input type="text" class="form-control icon-search " placeholder="Tulis tempat yang ingin dikunjungi" class="rounded padding-right 10xl">
+
+    <!-- Start Home -->
+    <div class="bg-home">
+      <img src="img/bg-home.png" alt="" style="width: 100%" />
+      <div class="content-home">
+        <h1 class="fw-bold mb-3">Mau Pergi Kemana?</h1>
+        <div class="search-home mb-3 form">
+          <input type="text" class="form-control form-control-lg bg-light rounded-5" style="font-size: 14px" placeholder="Tulis destinasi yang ingin dikunjungi" />
+        </div>
+      </div>
+    </div>
+    <!-- End Home -->
+
+    <!-- Content Destinasi Pilihan-->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-7 col-md-9 col-lg-10">
+            <p class="fw-semibold fs-4 mb-4">Destinasi Pilihan</p>
+          </div>
+          <div class="col-5 col-md-3 col-lg-2 mt-1">
+            <a href="rekomendasi.html" class="ms-4" style="font-size: 14px">Selengkapnya</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" style="color: blue">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+            </svg>
           </div>
         </div>
-      </form>
-    </div>
-    
-  <!-- Content Destinasi Pilihan-->
-  <div class="container-fluid mt-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-5 mb-3">
-          <h1 class="fw-bolder fs-3">Destinasi Pilihan</h1>
-        </div>
-        <div class="col-7 mt-5 mx text-end"> <!-- Kolom baru untuk menempatkan tombol "Selengkapnya" -->
-          <a class="rekomendasi" href="rekomendasi.html">Selengkapnya →</a>
-      </div>
-      <div class="row mb-4 mb-3">
-          <div class="col-md-3">
+
+        <div class="row mb-md-2 mb-lg-2">
+          <div class="col-6 col-md-3 mb-4">
             <div class="card">
               <div class="position-relative">
                 <img src="img/rekom-1.png" class="card-img-top" alt="Gambar" />
@@ -102,7 +92,7 @@
               <a href="destinasi-detail.html" class="stretched-link"></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-md-3 mb-4">
             <div class="card">
               <div class="position-relative">
                 <img src="img/rekom-2.png" class="card-img-top" alt="Gambar" />
@@ -114,7 +104,7 @@
               <a href="destinasi-detail.html" class="stretched-link"></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-md-3 mb-4">
             <div class="card">
               <div class="position-relative">
                 <img src="img/rekom-3.png" class="card-img-top" alt="Gambar" />
@@ -126,7 +116,7 @@
               <a href="destinasi-detail.html" class="stretched-link"></a>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-6 col-md-3 mb-4">
             <div class="card">
               <div class="position-relative">
                 <img src="img/rekom-4.png" class="card-img-top" alt="Gambar" />
@@ -139,161 +129,428 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- End Destinasi Pilihan -->
 
-         <!-- End Destinasi Pilihan-->
-
-       <!-- Content Rekomendasi-->
-
-       <section class="container-fluid mt-5" style="background: linear-gradient(to bottom, #881818, #be3131);">
-        <div class="container pb-3">
-          <div class="col-5 mb-4">
-            <h1 class="fw-bolder fs-2 text-light">Destinasi Tersembunyi</h1>
+    <!-- Content Destinasi Tersembunyi-->
+    <div class="container-fluid py-5" style="background: linear-gradient(to bottom, #881818, #be3131)">
+      <div class="container">
+        <div class="row">
+          <div class="col-7 col-md-9 col-lg-10">
+            <p class="fw-semibold fs-4 mb-4 text-light">Destinasi Tersembunyi</p>
+          </div>
+          <div class="col-5 col-md-3 col-lg-2 mt-1">
+            <a href="rekomendasi.html" class="ms-4" style="font-size: 14px; color: white">Selengkapnya</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" style="color: white">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+            </svg>
           </div>
         </div>
-      </section>
-      <span style="color: #8f1313; font-size: 45px">
-              </nav>
+        <div id="destinasiCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="img/tersem-1.png" class="card-img-top" alt="Gambar" />
+                      <div class="overlay-4">
+                        <h5 class="fw-bold" style="font-size: 20px">Pantai Ora</h5>
+                        <p class="fw-normal" style="font-size: 12px">Maluku</p>
+                      </div>
+                    </div>
+                    <a href="destinasi-detail.html" class="stretched-link"></a>
+                  </div>
+                  <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+                    Pantai Ora adalah salah satu pantai di Maluku yang namanya sudah dikenal hingga mancanegara. Keindahan alam di Pantai ini sudah banyak dikenal bahkan disamakan dengan pantai-pantai di Hawai maupun Maladewa. Namun, yang
+                    perlu diketahui adalah bahwa akses menuju
+                  </p>
+                </div>
+                <div class="col-md-5">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="img/tersem-2.png" class="card-img-top" alt="Gambar" />
+                      <div class="overlay-4">
+                        <h5 class="fw-bold" style="font-size: 20px">Air Terjun Madakirupura</h5>
+                        <p class="fw-normal" style="font-size: 12px">Jawa Timur</p>
+                      </div>
+                    </div>
+                    <a href="destinasi-detail.html" class="stretched-link"></a>
+                  </div>
+                  <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+                    Air Terjun Madakaripura terletak tidak jauh dari Wisata Gunung Bromo, tepatnya berada di Desa Negororejo, Kecamatan Lumbang. Jaraknya sekitar 30 km atau sekitar 1 jam perjalanan dari pusat Kota Probolinggo. Air Terjun
+                    ini memiliki ceri
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="img/tersem-3.png" class="card-img-top" alt="Gambar" />
+                      <div class="overlay-4">
+                        <h5 class="fw-bold" style="font-size: 20px">Danau Kaco</h5>
+                        <p class="fw-normal" style="font-size: 12px">Jambi</p>
+                      </div>
+                    </div>
+                    <a href="destinasi-detail.html" class="stretched-link"></a>
+                  </div>
+                  <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+                    Danau Kaco adalah salah satu destinasi wisata yang terkenal di Indonesia, terletak di Desa Lempur, Kecamatan Gunung Raya, Kabupaten Kerinci, Jambi. Danau ini merupakan bagian dari Taman Nasional Kerinci Seblat, yang
+                    telah diak
+                  </p>
+                </div>
+                <div class="col-md-5">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="img/tersem-4.png" class="card-img-top" alt="Gambar" />
+                      <div class="overlay-4">
+                        <h5 class="fw-bold" style="font-size: 20px">Goa Jomblang</h5>
+                        <p class="fw-normal" style="font-size: 12px">Yogyakarta</p>
+                      </div>
+                    </div>
+                    <a href="destinasi-detail.html" class="stretched-link"></a>
+                  </div>
+                  <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+                    Goa Jomblang merupakan gua yang berbentuk vertikal karena permukaan tanah yang runtuh. Runtuhnya tanah di area tersebut tidak membuat tanaman yang tumbuh di atasnya menjadi hancur, tet
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="img/tersem-5.png" class="card-img-top" alt="Gambar" />
+                      <div class="overlay-4">
+                        <h5 class="fw-bold" style="font-size: 20px">Pulau Serangan</h5>
+                        <p class="fw-normal" style="font-size: 12px">Bali</p>
+                      </div>
+                    </div>
+                    <a href="destinasi-detail.html" class="stretched-link"></a>
+                  </div>
+                  <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+                    Pulau Serangan merupakan kawasan bahari yang indah dengan garis pantainya. Kawasan pulau tersebut juga memiliki wisata budaya, sejarah, dan wisata kuliner yang menggugah selera.
+                  </p>
+                </div>
+                <div class="col-md-5">
+                  <div class="card">
+                    <div class="position-relative">
+                      <img src="img/tersem-6.png" class="card-img-top" alt="Gambar" />
+                      <div class="overlay-4">
+                        <h5 class="fw-bold" style="font-size: 20px">Teluk Kiluan</h5>
+                        <p class="fw-normal" style="font-size: 12px">Lampung</p>
+                      </div>
+                    </div>
+                    <a href="destinasi-detail.html" class="stretched-link"></a>
+                  </div>
+                  <p class="fw-normal text-light truncate-text mt-2" style="font-size: small">
+                    Teluk Kiluan adalah teluk yang berada di Kabupaten Tanggamus, Lampung dengan potensi wisata bahari dan terkenal dengan banyaknya lumba-lumba dan paus
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <hr class="mt-2" />
+          <button class="btn-next carousel-control-next" type="button" data-bs-target="#destinasiCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
-      <!-- End Berita -->
-  
-      <!-- Isi Berita -->
-      <div class="container-fluid mt-2">
-        <div class="container">
-          <div class="row d-flex justify-content-around">
-            <div class="col-6 text-center">
-              <a href="#" class="btn-berita fw-semibold active">Terkini</a>
-            </div>
-            <div class="col-6 text-center">
-              <a href="#" class="btn-berita fw-semibold">Terpopuler</a>
-            </div>
+    </div>
+    <!-- End Tersembunyi -->
+
+    <!-- Berita -->
+    <div class="container-fluid mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-7 col-md-9 col-lg-10">
+            <p class="fw-semibold fs-4 mb-4">Berita</p>
           </div>
-          <hr class="my-2 hr-custom" />
-          <div class="row mt-5 mb-4">
-            <div class="col-md-4">
-              <div class="card-berita">
-                <div class="position-relative">
-                  <img src="img/berita-sumatera-1.png" class="card-img-top" alt="Gambar" />
-                  <div class="bg-custom-berita">
-                    <h5 class="fw-semibold mb-1" style="font-size: 15px">Menjelajahi Destinasi Wisata di Sumatera Barat dari Batu Malin Kundang hingga Jam Gadang</h5>
-                    <p class="fw-normal mb-1" style="font-size: 12px">06 Mei 2023</p>
-                    <h5 class="fw-semibold mb-1" style="font-size: 14px">Travel Tempo</h5>
-                  </div>
-                </div>
-                <div class="bg-custom-btn-berita">
-                  <a href="https://travel.tempo.co/read/1722723/menjelajahi-destinasi-wisata-di-sumatera-barat-dari-batu-malin-kundang-hingga-jam-gadang" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"
-                    >Lihat Detail >
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card-berita">
-                <div class="position-relative">
-                  <img src="img/berita-sumatera-2.png" class="card-img-top" alt="Gambar" />
-                  <div class="bg-custom-berita">
-                    <h5 class="fw-semibold mb-1" style="font-size: 15px">Tak hanya Danau Toba, Sumatera Utara Punya Banyak Wisata Menarik</h5>
-                    <p class="fw-normal mb-1" style="font-size: 12px">06 Januari 2022</p>
-                    <h5 class="fw-semibold mb-1" style="font-size: 14px">Kompas.com</h5>
-                  </div>
-                </div>
-                <div class="bg-custom-btn-berita">
-                  <a href="https://travel.kompas.com/read/2022/01/06/190700927/tak-hanya-danau-toba-sumatera-utara-punya-banyak-wisata-menarik" target="_blank" class="stretched-link fw-semibold" style="font-size: 14px">Lihat Detail > </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card-berita">
-                <div class="position-relative">
-                  <img src="img/berita-sumatera-3.png" class="card-img-top" alt="Gambar" />
-                  <div class="bg-custom-berita">
-                    <h5 class="fw-semibold mb-1" style="font-size: 15px">Genjot Pengembangan Pulau Maspari, Destinasi Wisata Baru di Sumsel</h5>
-                    <p class="fw-normal mb-1" style="font-size: 12px">14 Juli 2023</p>
-                    <h5 class="fw-semibold mb-1" style="font-size: 14px">Sumatera Bisnis</h5>
-                  </div>
-                </div>
-                <div class="bg-custom-btn-berita">
-                  <a href="https://sumatra.bisnis.com/read/20230714/533/1674979/genjot-pengembangan-pulau-maspari-destinasi-wisata-baru-di-sumsel" target="_blank" class="stretched-link fw-semibold" style="font-size: 14px">Lihat Detail > </a>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="row mb-4">
-            <div class="col-md-4">
-              <div class="card-berita">
-                <div class="position-relative">
-                  <img src="img/berita-sumatera-4.png" class="card-img-top" alt="Gambar" />
-                  <div class="bg-custom-berita">
-                    <h5 class="fw-semibold mb-1" style="font-size: 15px">21 Wisata Pulau Sumatera, Wajib Dikunjungi saat Jelajah dengan Mobil</h5>
-                    <p class="fw-normal mb-1" style="font-size: 12px">17 April 2023</p>
-                    <h5 class="fw-semibold mb-1" style="font-size: 14px">IDN Times</h5>
-                  </div>
-                </div>
-                <div class="bg-custom-btn-berita">
-                  <a href="https://www.idntimes.com/travel/destination/kartika-nindita/wisata-sumatera-yang-wajib-dikunjungi-saat-jelajah-dengan-mobil" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"
-                    >Lihat Detail >
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card-berita">
-                <div class="position-relative">
-                  <img src="img/berita-sumatera-5.png" class="card-img-top" alt="Gambar" />
-                  <div class="bg-custom-berita">
-                    <h5 class="fw-semibold mb-1" style="font-size: 15px">15 Pulau di Sumatera Barat, Pulau Indah di Sumbar untuk dijelajah</h5>
-                    <p class="fw-normal mb-1" style="font-size: 12px">10 Maret 2023</p>
-                    <h5 class="fw-semibold mb-1" style="font-size: 14px">Switour.com</h5>
-                  </div>
-                </div>
-                <div class="bg-custom-btn-berita">
-                  <a href="https://www.switour.com/pulau-di-sumatera-barat/" target="_blank" class="stretched-link fw-semibold" style="font-size: 14px">Lihat Detail > </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card-berita">
-                <div class="position-relative">
-                  <img src="img/berita-sumatera-6.png" class="card-img-top" alt="Gambar" />
-                  <div class="bg-custom-berita">
-                    <h5 class="fw-semibold mb-1" style="font-size: 15px">20 Tempat Wisata Alam di Aceh, dari Pantai hingga Air Terjun</h5>
-                    <p class="fw-normal mb-1" style="font-size: 12px">18 September 2022</p>
-                    <h5 class="fw-semibold mb-1" style="font-size: 14px">Sumatera Bisnis</h5>
-                  </div>
-                </div>
-                <div class="bg-custom-btn-berita">
-                  <a href="https://travel.kompas.com/read/2021/08/08/091100327/20-tempat-wisata-alam-di-aceh-dari-pantai-hingga-air-terjun?page=all" target="_blank" class="stretched-link fw-semibold" style="font-size: 14px"
-                    >Lihat Detail >
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="row">
-            <div class="col-12">
-              <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-              </nav>
-            </div>
+          <div class="col-5 col-md-3 col-lg-2 mt-1">
+            <a href="berita.html" class="ms-4" style="font-size: 14px">Selengkapnya</a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16" style="color: blue">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+            </svg>
           </div>
         </div>
       </div>
-      <!-- End -->
+    </div>
+
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row d-flex justify-content-around">
+          <div class="col-6 text-center mt-2">
+            <a href="#" class="btn-berita fw-semibold" onclick="showContent('terkini')">Terkini</a>
+          </div>
+          <div class="col-6 text-center mt-2">
+            <a href="#" class="btn-berita fw-semibold" onclick="showContent('terpopuler')">Terpopuler</a>
+          </div>
+        </div>
+        <hr class="mt-1 hr-custom" />
+      </div>
+    </div>
+    <!-- End -->
+
+    <div id="terkini-content" class="berita-terkini">
       <div class="container-fluid">
         <div class="container">
-          <div class="row mx-auto pb-5 mt-2 md-3">
-            <div class="col-12">
-              <img src="img/banner.png" alt="" class="img-fluid" />
+          <div class="row mb-md-4">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terkini-1.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">Hidden Gems di Bali Timur: Pantai Labuan Amuk</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Bali timur, tepatnya di Kabupaten Karangasem menyimpan banyak permata tersembunyi. Ada pantai cantik bonus view perbukitan yang hijau nan asri.
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Detik Travel</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">01 April 2024</p>
+                  </div>
+                </div>
+                <a href="https://travel.detik.com/domestic-destination/d-7271344/hidden-gems-di-bali-timur-pantai-labuan-amuk" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terkini-2.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">Menparekraf Imbau Tindak Tegas Pungutan Liar Saat Libur Lebaran 2024</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Menteri Pariwisata dan Ekonomi Kreatif (Menparekraf) Sandiaga Uno mengimbau pemerintah daerah serta pihak yang berwenang untuk menindak tegas pungutan liar (pungli) yang terjadi saat libur Lebaran 2024.
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Kompas.com</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">01 April 2024</p>
+                  </div>
+                </div>
+                <a href="https://travel.kompas.com/read/2024/04/01/190601927/menparekraf-imbau-tindak-tegas-pungutan-liar-saat-libur-lebaran-2024" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terkini-3.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">Hidden Gems di Bantul: Pantai Pandansari, Punya Hutan Cemara dan Mercusuar</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Popularitas Pantai Pandansari tidak seperti Pantai Parangtritis atau Pantai Cemara Sewu. Tetapi, justru membuat pantai di Bantul ini cocok untuk mencari ketenangan.
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Detik Travel</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">30 Maret 2024</p>
+                  </div>
+                </div>
+                <a href="https://travel.detik.com/domestic-destination/d-7269076/hidden-gems-di-bantul-pantai-pandansari-punya-hutan-cemara-dan-mercusuar" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terkini-4.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">6 Rekomendasi Tempat Wisata di Malang Raya untuk Isi Libur Lebaran 2024</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Libur lebaran 2024 akan dijelang sebentar lagi. Bagi sebagian keluarga, momen itu kerap dimanfaatkan untuk berlibur bersama keluarga mengunjungi berbagai tempat wisata.
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Liputan 6</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">01 April 2024</p>
+                  </div>
+                </div>
+                <a
+                  href="https://www.liputan6.com/lifestyle/read/5561939/6-rekomendasi-tempat-wisata-di-malang-raya-untuk-isi-libur-lebaran-2024-dari-waduk-hingga-wahana-permainan"
+                  class="stretched-link fw-semibold"
+                  target="_blank"
+                  style="font-size: 14px"
+                >
+                </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terkini-5.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">5 Faktor Utama yang Dipertimbangkan Gen Z saat Memilih Destinasi Perjalanan</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Gen Z memiliki lima faktor yang dipertimbangkan ketika memilih destinasi perjalanan. Hal ini berdasarkan survei Booking Holdings, perusahaan perjalanan. Survei dilakukan dari Januari 2024 hingga Februari 2024 yang
+                    melibatkan 32.300 orang di 32 negara.
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Travel Tempo</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">01 April 2024</p>
+                  </div>
+                </div>
+                <a href="https://travel.tempo.co/read/1851775/5-faktor-utama-yang-dipertimbangkan-gen-z-saat-memilih-destinasi-perjalanan" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terkini-6.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">Desa Welora, Surga Bawah Laut di Ujung Maluku Barat Dayas</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">Keindahan alam Indonesia, tidak hanya tersaji di daratan saja. Bawah lautnya juga masih menyuguhkan keindahan.</p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Kompas.com</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">01 April 2024</p>
+                  </div>
+                </div>
+                <a href="https://travel.kompas.com/read/2024/04/01/110436927/desa-welora-surga-bawah-laut-di-ujung-maluku-barat-daya" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- Footer  -->
+    </div>
+
+    <div id="terpopuler-content" class="berita-terkini" style="display: none">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terpopuler-1.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">Desa Wisata Penglipuran Bali Diakui Dunia</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Akhirnya keelokan dan kebersihan Desa Penglipuran, Provinsi Bali, diapresiasi dunia. Desa Wisata Penglipuran merupakan salah satu dari desa wisata yang meraih penghargaan dari Organisasi Pariwisata Dunia di bawah
+                    Perserikatan Bangsa-Bangsa, UNWTO (United National World Tourism Organization). Desa tersebut terpilih menjadi salah satu dari 54 UNWTO Best Tourism Villages 2023.
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Indonesia.go.id</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">28 Oktober 2023</p>
+                  </div>
+                </div>
+                <a href="https://indonesia.go.id/kategori/pariwisata/7696/desa-wisata-penglipuran-bali-diakui-dunia?lang=1" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terpopuler-2.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">Pungutan Wisatawan Asing Baru 40 Persen, Pemprov Bali akan Sidak di Objek Wisata</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Sejak berlaku Pungutan Wisatawan Asing (PWA), Wisman yang membayar retribusi rata-rata hanya 5.000 orang per hari. Pungutan Wisatawan Asing Baru 40 Persen, Pemprov Bali akan Sidak di Objek Wisata
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Viva.co</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">21 Maret 2024</p>
+                  </div>
+                </div>
+                <a href="https://www.viva.co.id/berita/bisnis/1698517-pungutan-wisatawan-asing-baru-40-persen-pemprov-bali-akan-sidak-di-objek-wisata" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terpopuler-3.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">Destinasi Desa Wisata Unggulan di Sumatera Utara</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Desa wisata adalah komunitas atau masyarakat yang terdiri dari para penduduk suatu wilayah terbatas yang bisa saling berinteraksi secara langsung di bawah sebuah pengelolaan atau disebut Badan Usaha Milik Desa (Bumdes)
+                    sebagai wadah langsung bagi masyarakat akan kesadaran adanya potensi tempat sebagai tempat wisata.
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Wartakota</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">13 Juli 2021</p>
+                  </div>
+                </div>
+                <a href="https://wartakota.tribunnews.com/2021/07/13/destinasi-desa-wisata-unggulan-di-sumatera-utara#google_vignette" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terpopuler-4.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">Wisatawan Asing Mulai Beralih ke Destinasi Wisata Baru di Luar Bali</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">
+                    Pulau Bali merupakan salah satu destinasi wisata paling populer di kalangan wisatawan asing terutama yang berasal dari negara berkembang. Namun demikian, berdasarkan Mar
+                  </p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">Kompas.com</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">16 Maret 2024</p>
+                  </div>
+                </div>
+                <a href="https://www.kompas.com/properti/read/2024/03/16/083000121/wisatawan-asing-mulai-beralih-ke-destinasi-wisata-baru-di-luar-bali" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terpopuler-5.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">17 Wisata Jawa Barat 2023 Paling Indah, Bikin Gak Pengin Pulang</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">17 Wisata Jawa Barat 2023 Paling Indah, Bikin Gak Pengin Pulang</p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">IDN Times</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">24 April 2023</p>
+                  </div>
+                </div>
+                <a href="https://www.idntimes.com/travel/destination/prila-arofani/tempat-wisata-di-jawa-barat" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <div class="card-berita">
+                <div class="position-relative">
+                  <img src="img/berita-terpopuler-6.png" class="card-img-top-berita" alt="Gambar" />
+                </div>
+                <div class="bg-custom-berita">
+                  <h5 class="fw-semibold" style="font-size: 14px">6 Destinasi Wisata Unggulan Sulbar Cocok untuk Libur Akhir Pekan</h5>
+                  <p class="fw-normal truncate-text my-2" style="font-size: 12px; color: #848484">MAMUJU - Sulawesi Barat, salah satu daerah yang memiliki alam yang tak kalah indah dengan daerah lain di Indonesia.</p>
+                  <div class="fw-semibold" style="font-size: 13px; display: flex; justify-content: space-between">
+                    <p class="mb-1">TribunSulbar.com</p>
+                    <p class="mb-1 fw-medium" style="color: #848484">15 Agustus 2021</p>
+                  </div>
+                </div>
+                <a href="https://sulbar.tribunnews.com/2021/08/15/6-destinasi-wisata-unggulan-sulbar-cocok-untuk-libur-akhir-pekan?page=all" class="stretched-link fw-semibold" target="_blank" style="font-size: 14px"> </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row mx-auto py-5">
+          <div class="col-12">
+            <img src="img/banner1.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner -->
+
+    <!-- Footer  -->
     <div class="container-fluid py-2" style="background: linear-gradient(to bottom, #881818, #be3131)">
       <div class="container">
         <div class="row">
@@ -302,12 +559,12 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-4 my-3">
+          <div class="col-md-6 col-lg-4 my-3">
             <h2 class="fw-normal" style="font-size: 15px; color: white">
               Xflorin merupakan website yang menyediakan beragam informasi destinasi wisata di Indonesia secara terkini untuk membantu calon wisatawan ketika merencanakan perjalanannya menuju tempat wisata.
             </h2>
           </div>
-          <div class="col-3 my-3 offset-5">
+          <div class="col-md-4 offset-md-2 col-lg-3 my-md-3 my-2 offset-lg-5">
             <h2 class="fw-normal mb-3" style="font-size: 15px; color: white">Hubungi Kami:</h2>
             <a href="">
               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram text-white me-3" viewBox="0 0 16 16">
@@ -337,15 +594,17 @@
             </a>
           </div>
         </div>
-        <div class="row mt-2">
-          <div class="col-12 text-center">
+        <div class="row mt-3 mt-md-2">
+          <div class="col-md-12 text-center">
             <p class="fw-medium" style="color: white">Copyright ©2024 Xflorin Informasi Destinasi</p>
           </div>
         </div>
       </div>
     </div>
     <!-- end footer -->
-          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <script src="js/script.js"></script>
   </body>
 </html>
