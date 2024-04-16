@@ -9,7 +9,7 @@ function showContent(contentName) {
 
 // Live carousel
 document.addEventListener("DOMContentLoaded", function () {
-  var myCarousel = document.querySelector("#carouselExampleIndicators");
+  var myCarousel = document.querySelector("#carouselExampleDark");
   var carousel = new bootstrap.Carousel(myCarousel, {
     interval: 2000,
     wrap: true,
