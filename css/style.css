@@ -59,6 +59,7 @@ body {
 .bg-home {
   position: relative;
   text-align: center;
+  width: 100%;
 }
 .content-home {
   position: absolute;
@@ -81,6 +82,9 @@ body {
   position: absolute;
   top: 40%;
   transform: translateY(-50%);
+}
+.form-control {
+  font-size: 14px;
 }
 
 .carousel-control-prev {
@@ -388,6 +392,19 @@ h5 {
   }
   .hide-on-sm {
     display: none;
+  }
+  .bg-home {
+    height: 250px;
+  }
+  .search-home {
+    width: 300px;
+    border-radius: 0.375rem 0 0 0.375rem;
+  }
+  .form-control {
+    font-size: 10px;
+  }
+  .content-home {
+    margin-top: 20px;
   }
 }
 
